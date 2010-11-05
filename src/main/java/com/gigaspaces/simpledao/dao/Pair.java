@@ -14,16 +14,23 @@
  * limitations under the license.
  */
 
-package com.gigaspaces;
+package com.gigaspaces.simpledao.dao;
 
-/**
- * Hello world!
- *
- */
-public class App 
-{
-    public static void main( String[] args )
-    {
-        System.out.println( "Hello World!" );
+public class Pair<K, V> {
+    private final K k;
+    private final V v;
+
+    public Pair(K k, V v) {
+        this.k = k;
+        this.v = v;
+    }
+
+    public K getK() {
+
+        return k;
+    }
+
+    public V getV() {
+        return v;
     }
 }
